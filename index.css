@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
-
+@import url(mobile.css);
 :root {
     /* P R I M A R Y */
     --main-background: hsl(233, 47%, 7%);
@@ -106,3 +106,44 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .body__infos {
+      margin: 7% 5%;
+      height: auto;
+      width: auto;
+      flex-direction: column-reverse;
+    }
+    
+    .body__container {
+      padding: 5%;
+    }
+    
+    .body_container_title {
+      font-size: 24px;
+    }
+    
+    .body_container_text {
+      padding: 10% 0;
+    }
+    
+    .container__about {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .container_aboutinfos_title:hover {
+      font-size: 19px;
+    }
+    
+    .image__header {
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
+    }
+
+    .creddits {
+        text-align: center;
+        font-size: 14px;
+    }
+  }
